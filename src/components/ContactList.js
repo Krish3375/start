@@ -4,12 +4,12 @@ import ContactCard from "./ContactCard";
 const ContactList = (props) => {
     console.log(props);
     const renderContactList = props.contacts.map((contact) => {
-       <ContactCard contact={contact}> </ContactCard>
-        
+        return <ContactCard key={contact.id} contact={contact} />;
     });
     return (
-        <div className="ui called list">{renderContactList}
-            Contact List
+        <div className="ui celled list">
+            {renderContactList}
+            <div>Contact List</div>
         </div>
     );
 }

@@ -23,7 +23,6 @@ function App() {
       <Header />
       <AddContact />
       <ContactList contacts={contacts } />
-      
     </div>
   );
 }
